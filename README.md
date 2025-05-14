@@ -30,7 +30,12 @@ cd planventure-api
 
 2. Create a virtual environment and activate it:
 ```sh
-python -m venv venv
+# Using python3 explicitly (recommended)
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Or, if using the venv directly:
+/usr/bin/python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
@@ -46,7 +51,11 @@ cp .sample.env .env
 
 5. Start the Flask development server:
 ```sh
+# If flask command works
 flask run
+
+# If flask command is not found, use Python directly
+./venv/bin/python app.py
 ```
 
 ## 📚 API Endpoints
