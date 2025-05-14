@@ -56,6 +56,9 @@ flask run
 
 # If flask command is not found, use Python directly
 ./venv/bin/python app.py
+
+# Or use the convenient run script (recommended)
+./run.sh
 ```
 
 ## 📚 API Endpoints
